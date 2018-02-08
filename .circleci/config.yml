@@ -1,5 +1,4 @@
-version: 2
-$ cat config.yml
+$ cat circle.yml
 test:
   override:
     - echo Hello World
