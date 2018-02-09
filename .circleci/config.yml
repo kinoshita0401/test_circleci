@@ -10,7 +10,7 @@ jobs:
        - run:
            name: dependencies
            command: |
-             npm install -g truffle
+             sudo npm install -g truffle
 #             mkdir nanaCoin
 #             cd nanaCoin
 #             truffle init
