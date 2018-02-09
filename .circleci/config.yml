@@ -3,7 +3,7 @@ jobs:
    build:
      docker:
        - image: circleci/node:latest
-     working_directory: /home/ethereum
+     working_directory: /home/checkout_test
      steps:
        - checkout
        - run: echo "start config!"
