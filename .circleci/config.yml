@@ -3,7 +3,7 @@ jobs:
    build:
      docker:
        - image: circleci/node:latest
-     working_directory: ~/../etheremu/nanaCoin
+     working_directory: ~/../ethereum/nanaCoin
      steps:
        - checkout
        - run: echo "start config!"
