@@ -11,9 +11,9 @@ jobs:
            name: dependencies
            command: |
              sudo npm install -g truffle
-#             mkdir nanaCoin
-#             cd nanaCoin
-#             truffle init
+            sudo mkdir nanaCoin
+            sudo cd nanaCoin
+            sudo truffle init
 #       - run:
 #           name: compile
 #           command: yarn truffle compile
