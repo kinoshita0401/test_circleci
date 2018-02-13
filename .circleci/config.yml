@@ -2,8 +2,8 @@ version: 2
 jobs:
    build:
      docker:
-       - image: circleci/node:latest
-     working_directory: /home/ethereum/cocoCoin
+       - image: node:latest
+     working_directory: ~/ethereum/cocoCoin
      steps:
        - checkout
        - run: echo "start config!"
