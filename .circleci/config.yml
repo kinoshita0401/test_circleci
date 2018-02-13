@@ -28,8 +28,9 @@ jobs:
            name: test
            command: |
              cd cocoCoin
-#            truffle test ./test/cococoin.js
              truffle test
+#            truffle test ./test/cococoin.js
+
        
        
 # version: 2
