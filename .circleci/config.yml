@@ -9,7 +9,7 @@ jobs:
        - run: echo "start config!"
        - run:
            name: test
-           command: truffle test:all
+           command: yarn test:all
        
        
 # version: 2
