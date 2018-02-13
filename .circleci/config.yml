@@ -3,7 +3,7 @@ jobs:
    build:
      docker:
        - image: node:latest
-     working_directory: /root/ethereum
+     working_directory: /root/ethereum/cocoCoin
      steps:
        - checkout
        - run: echo "start config!"
@@ -12,6 +12,8 @@ jobs:
            command: |
              npm install -g truffle
              cd cocoCoin
+             pwd
+             truffle init
        - run:
            name: open zeppelin
            command: |
@@ -25,7 +27,7 @@ jobs:
        - run:
            name: test
            command: |
-             truffle test ./test/cococoin.js
+             truffle test ./cocoCoin/test/cococoin.js
        
        
 # version: 2
