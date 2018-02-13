@@ -13,7 +13,7 @@ jobs:
              npm install -g truffle
              cd cocoCoin
              pwd
-#             truffle init
+             truffle init
        - run:
            name: open zeppelin
            command: |
@@ -27,7 +27,7 @@ jobs:
        - run:
            name: test
            command: |
-             truffle test .test/cococoin.js
+             truffle test ./test/cococoin.js
        
        
 # version: 2
