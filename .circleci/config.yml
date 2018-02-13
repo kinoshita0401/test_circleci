@@ -10,8 +10,6 @@ jobs:
        - run:
            name: test
            command: |
-               docker exec -it 21d6c24cfbeb bash
-               cd /home/ethereum/cocoCoin
                pwd
 #              /home/ethereum/cocoCoin/truffle test
        
