@@ -12,8 +12,6 @@ jobs:
            command: |
              npm install -g truffle
              cd cocoCoin
-             pwd
-             truffle init
        - run:
            name: open zeppelin
            command: |
