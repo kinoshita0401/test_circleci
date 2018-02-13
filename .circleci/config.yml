@@ -17,12 +17,12 @@ jobs:
        - run:
            name: open zeppelin
            command: |
-#            npm init -f
-#            npm install zeppelin-solidity --save
+             npm init -f
+             npm install zeppelin-solidity --save
        - run:
            name: compile
            command: |
-#            truffle compile
+             truffle compile
              ls -la
        - run:
            name: test
