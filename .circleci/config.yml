@@ -21,13 +21,13 @@ jobs:
        - run:
            name: compile
            command: |
-            cd cocoCoin
+             cd cocoCoin
              truffle compile
              ls -la
        - run:
            name: test
            command: |
-             truffle test ./cocoCoin/test/cococoin.js
+             truffle test ./test/cococoin.js
        
        
 # version: 2
