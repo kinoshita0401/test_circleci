@@ -10,19 +10,19 @@ jobs:
        - run:
            name: dependencies
            command: |
-             npm install -g truffle
+#            npm install -g truffle
              cd cocoCoin
              pwd
-             truffle init
+#            truffle init
        - run:
            name: open zeppelin
            command: |
-             npm init -f
-             npm install zeppelin-solidity --save
+#            npm init -f
+#            npm install zeppelin-solidity --save
        - run:
            name: compile
            command: |
-             truffle compile
+#            truffle compile
              ls -la
        - run:
            name: test
