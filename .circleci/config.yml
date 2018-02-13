@@ -3,7 +3,7 @@ jobs:
    build:
      docker:
        - image: node:latest
-     working_directory: /root/ethereum/cocoCoin
+     working_directory: /root/ethereum
      steps:
        - checkout
        - run: echo "start config!"
