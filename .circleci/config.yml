@@ -3,20 +3,13 @@ jobs:
    build:
      docker:
        - image: circleci/node:latest
-     working_directory: ~/ethereum/nanaCoin
+     working_directory: ~/ethereum
      steps:
        - checkout
        - run: echo "start config!"
-       - run:
-           name: dependencies
-           command: |
-            sudo npm install -g truffle
-            sudo mkdir /home/ethereum/nanaCoin
-            sudo cd /home/ethereum/nanaCoin
-            sudo truffle init
 #       - run:
-#           name: compile
-#           command: yarn truffle compile
+#           name: test
+#           command: truffle test:all
        
        
 # version: 2
