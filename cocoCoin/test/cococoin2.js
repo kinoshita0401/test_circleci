@@ -1,4 +1,4 @@
-contract('CocoCoin', function(accounts) {
+contract('CocoCoin2', function(accounts) {
     console.log("test start!");
     describe('test1', function() {
         console.log("describe1!");
@@ -31,12 +31,4 @@ contract('CocoCoin', function(accounts) {
         });
     });
 });
-
-  /*it("should put 10000 CocoCoin in the first account", function() {
-    var meta = CocoCoin.deployed();
-console.log(meta.getBalance.call(accounts[0]));
-    return meta.getBalance.call(accounts[0]).then(function(balance) {
-      assert.equal(balance.valueOf(), 10000, "10000 wasn't in the first account");
-    })
-  });*/
 

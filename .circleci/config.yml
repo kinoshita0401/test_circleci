@@ -14,6 +14,14 @@ jobs:
              npm install -g truffle
              truffle init
        - run:
+           name: open zeppelin
+           command: |
+             npm init -f
+             npm install zeppelin-solidity --save
+       - run:
+           name: compile
+           command: truffle compile
+       - run:
            name: test
            command: |
              truffle test
