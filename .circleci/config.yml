@@ -20,7 +20,9 @@ jobs:
              npm install zeppelin-solidity --save
        - run:
            name: compile
-           command: truffle compile
+           command: |
+             truffle compile
+             ls -la
        - run:
            name: test
            command: |
