@@ -3,15 +3,15 @@ jobs:
    build:
      docker:
        - image: node:latest
-     working_directory: ~/ethereum/cocoCoin
+     working_directory: /root/ethereum/cocoCoin
      steps:
        - checkout
        - run: echo "start config!"
        - run:
            name: test
            command: |
-               pwd
-#              /home/ethereum/cocoCoin/truffle test
+                pwd
+                /root/ethereum/cocoCoin/truffle test
        
        
 # version: 2
