@@ -7,9 +7,9 @@ jobs:
      steps:
        - checkout
        - run: echo "start config!"
-#       - run:
-#           name: test
-#           command: truffle test:all
+       - run:
+           name: test
+           command: truffle test:all
        
        
 # version: 2
