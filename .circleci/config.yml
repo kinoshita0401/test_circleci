@@ -26,7 +26,7 @@ jobs:
        - run:
            name: test
            command: |
-             truffle test ./test/cococoin.js
+             truffle test ./cocoCoin/test/cococoin.js
        
        
 # version: 2
