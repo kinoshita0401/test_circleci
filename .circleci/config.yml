@@ -10,13 +10,13 @@ jobs:
        - run:
            name: dependencies
            command: |
+             pwd
              npm install -g truffle
              truffle init
        - run:
            name: test
            command: |
-                pwd
-                /root/ethereum/cocoCoin/truffle test
+             truffle test
        
        
 # version: 2
