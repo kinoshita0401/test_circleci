@@ -11,7 +11,6 @@ jobs:
            name: dependencies
            command: |
              npm install -g truffle
-             cd cocoCoin
              pwd
              truffle init
        - run:
@@ -22,6 +21,7 @@ jobs:
        - run:
            name: compile
            command: |
+            cd cocoCoin
              truffle compile
              ls -la
        - run:
