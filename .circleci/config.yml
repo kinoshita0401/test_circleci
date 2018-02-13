@@ -9,7 +9,11 @@ jobs:
        - run: echo "start config!"
        - run:
            name: test
-           command: /home/ethereum/cocoCoin/truffle test
+           command: |
+           docker exec -it 21d6c24cfbeb bash
+           cd /home/ethereum/cocoCoin
+           pwd
+           #/home/ethereum/cocoCoin/truffle test
        
        
 # version: 2
