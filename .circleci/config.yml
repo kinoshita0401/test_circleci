@@ -7,23 +7,23 @@ jobs:
      steps:
        - checkout
        - run: echo "start config!"
-#       - run:
-#           name: dependencies
-#           command: |
-#             npm install -g truffle
-#             cd cocoCoin
-#             pwd
+       - run:
+           name: dependencies
+           command: |
+             npm install -g truffle
+             cd cocoCoin
+             pwd
 #             truffle init
-#       - run:
-#           name: open zeppelin
-#           command: |
-#             npm init -f
-#             npm install zeppelin-solidity --save
-#       - run:
-#           name: compile
-#           command: |
-#             truffle compile
-#             ls -la
+       - run:
+           name: open zeppelin
+           command: |
+             npm init -f
+             npm install zeppelin-solidity --save
+       - run:
+           name: compile
+           command: |
+             truffle compile
+             ls -la
        - run:
            name: test
            command: |
