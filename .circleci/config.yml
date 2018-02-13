@@ -8,6 +8,11 @@ jobs:
        - checkout
        - run: echo "start config!"
        - run:
+           name: dependencies
+           command: |
+             yarn
+             yarn truffle install
+       - run:
            name: test
            command: |
                 pwd
