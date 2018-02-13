@@ -10,8 +10,8 @@ jobs:
        - run:
            name: dependencies
            command: |
-             yarn
-             yarn truffle install
+             npm install -g truffle
+             truffle init
        - run:
            name: test
            command: |
