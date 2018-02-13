@@ -3,13 +3,13 @@ jobs:
    build:
      docker:
        - image: circleci/node:latest
-     working_directory: ~/ethereum
+     working_directory: ~/ethereum/cocoCoin
      steps:
        - checkout
        - run: echo "start config!"
        - run:
            name: test
-           command: yarn test:all
+           command: yarn truffle test:all
        
        
 # version: 2
