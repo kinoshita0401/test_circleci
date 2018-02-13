@@ -14,12 +14,12 @@ jobs:
 #             cd cocoCoin
 #             pwd
 #             truffle init
-       - run:
+#       - run:
 #           name: open zeppelin
 #           command: |
 #             npm init -f
 #             npm install zeppelin-solidity --save
-       - run:
+#       - run:
 #           name: compile
 #           command: |
 #             truffle compile
