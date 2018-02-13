@@ -10,10 +10,10 @@ jobs:
        - run:
            name: dependencies
            command: |
-#            npm install -g truffle
+             npm install -g truffle
              cd cocoCoin
              pwd
-#            truffle init
+             truffle init
        - run:
            name: open zeppelin
            command: |
