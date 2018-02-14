@@ -7,10 +7,6 @@ jobs:
      steps:
        - checkout
        - run: echo "start config!"
-       - run: 
-          name: docker
-          command: |
-             docker ps -a
        - run:
            name: dependencies
            command: |
@@ -34,3 +30,10 @@ jobs:
              cd cocoCoin
              truffle test
 #            truffle test ./test/cococoin.js
+   deploy:
+     machine: true
+     working_directory: /root/ethereum
+     steps:
+      - checkouts
+      - run: docker --version
+      - run: docker ps -a
