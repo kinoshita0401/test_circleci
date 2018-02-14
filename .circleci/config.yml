@@ -35,6 +35,7 @@ jobs:
        - run: docker --version
        - run: docker ps -a
        
+       
 
 #     deploy: #デプロイするジョブ
 #     docker:
