@@ -31,7 +31,6 @@ jobs:
              truffle test
 #            truffle test ./test/cococoin.js
    deploy: #デプロイするジョブ
-     machine: true
      working_directory: /root/ethereum
      steps:
 #       - checkout
