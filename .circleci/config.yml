@@ -1,6 +1,6 @@
 version: 2
 jobs:
-   build:
+   build: #単体テストを実行するジョブ
      docker:
        - image: node:latest
      working_directory: /root/ethereum
@@ -30,7 +30,7 @@ jobs:
              cd cocoCoin
              truffle test
 #            truffle test ./test/cococoin.js
-   deploy:
+   deploy: #デプロイするジョブ
      machine: true
      working_directory: /root/ethereum
      steps:
@@ -38,3 +38,14 @@ jobs:
       - run: echo "start docker check!"
       - run: docker --version
       - run: docker ps -a
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy: # deployはbuildのあとに実行
+          requires:
+            - build
+          filters: # developブランチの場合のみデプロイする
+            branches:
+              only: develop
