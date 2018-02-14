@@ -7,6 +7,10 @@ jobs:
      steps:
        - checkout
        - run: echo "start config!"
+       - run: 
+          name: docker
+          command: |
+             docker ps -a
        - run:
            name: dependencies
            command: |
