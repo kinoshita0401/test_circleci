@@ -31,6 +31,8 @@ jobs:
              truffle test
 #            truffle test ./test/cococoin.js
    deploy: #デプロイするジョブ
+     docker:
+     - image: docker
      working_directory: /root/ethereum
      steps:
       - checkout
