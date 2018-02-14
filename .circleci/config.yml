@@ -32,8 +32,12 @@ jobs:
              truffle test
 #            truffle test ./test/cococoin.js
        - run: echo "start docker check!"
-       - run: docker --version
-       - run: docker ps -a
+       - run:
+           name: docker install
+           command: |
+             npm install -g docker
+             docker --version
+             docker ps -a
        
        
 
