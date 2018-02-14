@@ -33,7 +33,7 @@ jobs:
    deploy: #デプロイするジョブ
      working_directory: /root/ethereum
      steps:
-#       - checkout
+      - checkout
       - run: echo "start docker check!"
       - run: docker --version
       - run: docker ps -a
