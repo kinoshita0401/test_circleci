@@ -34,6 +34,6 @@ jobs:
      machine: true
      working_directory: /root/ethereum
      steps:
-      - checkouts
+      - checkout
       - run: docker --version
       - run: docker ps -a
