@@ -1,8 +1,7 @@
 version: 2
 jobs:
    build: #単体テストを実行するジョブ
-     docker:
-       - machine: true
+     machine: true
      working_directory: /root/ethereum
      steps:
        - checkout
