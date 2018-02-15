@@ -8,12 +8,8 @@ jobs:
        - run: echo "start config!"
        - run: pwd
        - run: ls -la
-       - run:
-           name: compile
-           command: |
-             cd cocoCoin
-             truffle compile
-             ls -la
+       - run: ifconfig
+       - run: whoami
        
 
 #     deploy: #デプロイするジョブ
