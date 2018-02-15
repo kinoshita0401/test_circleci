@@ -2,10 +2,12 @@ version: 2
 jobs:
    build: #単体テストを実行するジョブ
      machine: true
-     working_directory: /root/ethereum
+     working_directory: ~
      steps:
        - checkout
        - run: echo "start config!"
+       - run: pwd
+       - run: ls -la
 
        
 
